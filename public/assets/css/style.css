@@ -1,0 +1,110 @@
+* {
+    --storia-major-font: 'Playfair Display', serif;
+    --storia-text-font: 'Raleway', sans-serif;
+    --storia-ice: #d6eceb;
+    --storia-frost: #84cbcd;
+    --storia-duck: #048b9a;
+    --storia-petrol: #1d4851;
+}
+
+body {
+    background-color: var(--storia-ice);
+    font-family: var(--storia-text-font);
+}
+
+.logo-header {
+    width: 70%;
+    margin-top: 5rem;
+    height: 100%;
+    /*filter: drop-shadow(4px 4px 4px var(--storia-petrol));*/
+}
+
+.navbar {
+    font-family: var(--storia-major-font);
+    width: 94%;
+    margin-left: 3%;
+}
+
+.navbar .asterisk {
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.navbar-list {
+    padding-right: 3.6rem;
+}
+
+.storia-card {
+    width: 100%;
+}
+
+.card-container {
+    padding: 0 1rem 0 1rem;
+}
+
+.overlay-proteger {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 1rem;
+    background-color: var(--storia-petrol);
+    overflow: hidden;
+    width: 92%;
+    height:0;
+    transition: .5s ease;
+}
+
+.overlay-valoriser {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 1rem;
+    background-color: var(--storia-frost);
+    overflow: hidden;
+    width: 92%;
+    height:0;
+    transition: .5s ease;
+}
+
+.overlay-transmettre {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 1rem;
+    background-color: var(--storia-duck);
+    overflow: hidden;
+    width: 92%;
+    height:0;
+    transition: .5s ease;
+}
+
+.card-container:hover .overlay-proteger {
+    bottom: 0;
+    height: 100%;
+}
+
+.card-container:hover .overlay-valoriser {
+    bottom: 0;
+    height: 100%;
+}
+
+.card-container:hover .overlay-transmettre {
+    bottom: 0;
+    height: 100%;
+}
+
+.card-text {
+    color: var(--storia-ice);
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+}
+
+.card-valoriser {
+    color: var(--storia-petrol);
+}
