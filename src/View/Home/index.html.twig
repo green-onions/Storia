@@ -3,86 +3,23 @@
 {% block title %}S'toria{% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rounded-bottom p-0 pl-2">
-                    <a class="navbar-brand" href="#">
-                        <img src="/assets/images/pictos/storia-flower-full.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center navbar-list" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="/assets/images/pictos/storia-asterisk-petrol.png" width="20" height="20" class="d-inline-block align-top asterisk" alt="">
-                                    S'TORIA
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="/assets/images/pictos/storia-asterisk-petrol.png" width="20" height="20" class="d-inline-block align-top asterisk" alt="">
-                                    EXPERTISE
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="/assets/images/pictos/storia-asterisk-petrol.png" width="20" height="20" class="d-inline-block align-top asterisk" alt="">
-                                    PRESTATIONS
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="/assets/images/pictos/storia-asterisk-petrol.png" width="20" height="20" class="d-inline-block align-top asterisk" alt="">
-                                    CONTACT
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-    </div>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center">
-            <img src="/assets/images/logos/storia-logo-full-light.png"
-                 alt="S'toria : protéger, valoriser, transmettre"
-                 class="logo-header">
-        </div>
-    </div>
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-4 card-container">
-                <img src="/assets/images/cards/storia-card-proteger.png" alt="S'toria protège vos archives." class="storia-card">
-                <div class="overlay-proteger">
-                    <div class="card-text">
-                        <p>Protéger ses archives, les conserver dans les meilleures conditions, constitue
-                            la clé d’une valorisation patrimoniale réussie.</p>
-                        <p>Le traitement des sources historiques permet de se plonger au cœur de votre
-                            histoire, de vos valeurs, et de consolider un héritage à transmettre.</p>
-                        <p>La sauvegarde de cette mémoire implique aussi de travailler au-delà,
-                            en complétant le fonds patrimonial propre à votre structure par des recherches
-                            historiques, des collectes d’archives orales, des sources qui enrichissent
-                            votre passé. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 card-container">
-                <img src="/assets/images/cards/storia-card-valoriser.png" alt="S'toria valorise vos archives." class="storia-card">
-                <div class="overlay-valoriser">
-                    <div class="card-text card-valoriser">
-                        Hello World
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 card-container">
-                <img src="/assets/images/cards/storia-card-transmettre.png" alt="S'toria transmet vos archives." class="storia-card m-0 p-0">
-                <div class="overlay-transmettre">
-                    <div class="card-text">
-                        Hello World
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    {% include '/home/navbar.html.twig' %}
+
+    {% include '/home/logo.html.twig' %}
+
+    <hr id="storia">
+
+    {% include '/home/cards.html.twig' %}
+
+    <hr id="expertise">
+
+    {%  include '/home/expertise.html.twig' %}
+
+    <hr id="prestations">
+
+    {% include '/home/prestations.html.twig' %}
+
+    <hr id="contact">
+
 {% endblock %}

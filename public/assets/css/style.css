@@ -8,8 +8,45 @@
 }
 
 body {
-    background-color: var(--storia-ice);
+    background-color : aliceblue;
     font-family: var(--storia-text-font);
+    font-size: 1.2rem;
+}
+
+hr {
+    margin-top: 3rem;
+    width: 80%;
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+h3 {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+span {
+    font-weight: 700;
 }
 
 .logo-header {
@@ -21,90 +58,136 @@ body {
 
 .navbar {
     font-family: var(--storia-major-font);
+    background-color: var(--storia-ice);
     width: 94%;
     margin-left: 3%;
 }
 
+.navbar a {
+    color : var(--storia-duck)
+}
+
+.navbar a:hover {
+    color : var(--storia-petrol);
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .navbar .asterisk {
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
     margin-right: 0.1rem;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar .asterisk:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .navbar-list {
     padding-right: 3.6rem;
 }
 
-.storia-card {
-    width: 100%;
+.card-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.card-container {
+.cards-title-logo {
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cards-title-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.storia-card {
+    display: block;
+    width: 100%;
     padding: 0 1rem 0 1rem;
 }
 
-.overlay-proteger {
+.text-over-card {
     position: absolute;
-    bottom: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
-    left: 1rem;
+    height: 100%;
+    width: 92%;
+    margin: 0 1rem 0 1rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.card-proteger {
     background-color: var(--storia-petrol);
-    overflow: hidden;
-    width: 92%;
-    height:0;
-    transition: .5s ease;
-}
-
-.overlay-valoriser {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    left: 1rem;
-    background-color: var(--storia-frost);
-    overflow: hidden;
-    width: 92%;
-    height:0;
-    transition: .5s ease;
-}
-
-.overlay-transmettre {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    left: 1rem;
-    background-color: var(--storia-duck);
-    overflow: hidden;
-    width: 92%;
-    height:0;
-    transition: .5s ease;
-}
-
-.card-container:hover .overlay-proteger {
-    bottom: 0;
-    height: 100%;
-}
-
-.card-container:hover .overlay-valoriser {
-    bottom: 0;
-    height: 100%;
-}
-
-.card-container:hover .overlay-transmettre {
-    bottom: 0;
-    height: 100%;
-}
-
-.card-text {
-    color: var(--storia-ice);
-    font-size: 1rem;
-    position: absolute;
-    top: 50%;
-    left: 8rem;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    /*transform: translate(-50%, -50%);*/
-    text-align: center;
 }
 
 .card-valoriser {
+    background-color: var(--storia-frost);
+}
+
+.card-transmettre {
+    background-color: var(--storia-duck);
+}
+
+.card-container:hover .text-over-card {
+    opacity: 1;
+}
+
+.text-card {
+    color: var(--storia-ice);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    -webkit-transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+    transform: translate(-10%, -10%);
+    text-align: center;
+}
+
+.text-card-valoriser {
     color: var(--storia-petrol);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    -webkit-transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+    transform: translate(-10%, -10%);
+    text-align: center;
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+}
+
+.linkedin {
+    color: var(--storia-duck);
+}
+
+.linkedin:hover {
+    color: var(--storia-petrol);
+    text-decoration: none;
 }
