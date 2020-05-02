@@ -49,13 +49,6 @@ span {
     font-weight: 700;
 }
 
-.logo-header {
-    width: 70%;
-    margin-top: 5rem;
-    height: 100%;
-    /*filter: drop-shadow(4px 4px 4px var(--storia-petrol));*/
-}
-
 .navbar {
     font-family: var(--storia-major-font);
     background-color: var(--storia-ice);
@@ -99,6 +92,25 @@ span {
 
 .navbar-list {
     padding-right: 3.6rem;
+}
+
+.logo-header {
+    width: 75%;
+    margin-top: 5rem;
+    height: 100%;
+}
+
+.carousel-container {
+    margin-top: 6rem;
+}
+
+.carousel-container h2 {
+    width: fit-content;
+    color: var(--storia-ice);
+    background-color: rgba(29, 72, 81, .9);
+    padding: 1rem;
+    margin-bottom: 4rem;
+    border-radius: 15px;
 }
 
 .card-container {
@@ -190,4 +202,86 @@ span {
 .linkedin:hover {
     color: var(--storia-petrol);
     text-decoration: none;
+}
+
+.list-title {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+.prestations .last-list-item {
+    padding-bottom: 0;
+}
+
+.prestations ul {
+    list-style-image: url('../images/pictos/storia-asterisk-petrol-list.png');
+}
+
+.prestations li {
+    padding-bottom: 1rem;
+}
+
+.list-asterisk {
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.list-asterisk:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.contact-form {
+    background-color: var(--storia-duck);
+    color: var(--storia-ice);
+    font-family: var(--storia-major-font);
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.contact-logo {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.contact-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background-color: var(--storia-frost);
+    color: var(--storia-petrol);
+}
+
+footer img {
+    width : 50px;
+}
+
+footer a {
+    color: var(--storia-duck);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--storia-ice);
+}
+
+.site-contributors {
+    font-size: 0.8rem;
+}
+
+.site-contributors p {
+    margin-bottom: 0.5rem
+}
+
+.social-network-text {
+    font-size: 0.6rem;
 }
