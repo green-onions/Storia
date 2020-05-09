@@ -1,5 +1,29 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}S'toria{% endblock %}
+
 {% block content %}
-    <h1>Hello Wilder !</h1>
+
+    {% include '/home/navbar.html.twig' %}
+
+    {% include '/home/logo.html.twig' %}
+
+    <hr id="storia">
+
+    {% include '/home/cards.html.twig' %}
+
+    <hr id="expertise">
+
+    {%  include '/home/expertise.html.twig' %}
+
+    <hr id="prestations">
+
+    {% include '/home/prestations.html.twig' %}
+
+    <hr id="contact">
+
+    {% include '/home/contact.html.twig' %}
+
+    {% include '/home/footer.html.twig' %}
+
 {% endblock %}

@@ -1,0 +1,384 @@
+* {
+    --storia-major-font: 'Playfair Display', serif;
+    --storia-text-font: 'Raleway', sans-serif;
+    --storia-ice: #d6eceb;
+    --storia-frost: #84cbcd;
+    --storia-duck: #048b9a;
+    --storia-petrol: #1d4851;
+}
+
+body {
+    background-color : aliceblue;
+    font-family: var(--storia-text-font);
+    font-size: 1.2rem;
+}
+
+hr {
+    margin-top: 3rem;
+    width: 80%;
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+h3 {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+span {
+    font-weight: 700;
+}
+
+.navbar {
+    font-family: var(--storia-major-font);
+    background-color: var(--storia-ice);
+    width: 94%;
+    margin-left: 3%;
+}
+
+.navbar-link {
+    display: block;
+    padding: 0.5rem;
+    color : var(--storia-duck)
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color : var(--storia-petrol);
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.navbar .asterisk {
+    margin-top: 0.3rem;
+    margin-right: 0.1rem;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar .asterisk:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.navbar-list {
+    padding-right: 12rem;
+}
+
+.top-page {
+    font-family: var(--storia-text-font);
+    font-size: 1rem;
+    color: var(--storia-ice);
+    border-radius: 10px;
+}
+
+.navbar-brand:hover .top-page {
+    background-color: var(--storia-petrol);
+    transition: all 0.5s ease;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+
+.carousel-container {
+    margin-top: 4rem;
+}
+
+.carousel-container h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+    width: fit-content;
+    color: var(--storia-ice);
+    background-color: rgba(29, 72, 81, .9);
+    padding: 1rem;
+    margin-bottom: 6rem;
+    border-radius: 15px;
+}
+
+.card-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.cards-title-logo {
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cards-title-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.storia-card {
+    display: block;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+}
+
+.text-over-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 92%;
+    margin: 0 1rem 0 1rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.card-proteger {
+    background-color: var(--storia-petrol);
+}
+
+.card-valoriser {
+    background-color: var(--storia-frost);
+}
+
+.card-transmettre {
+    background-color: var(--storia-duck);
+}
+
+.card-container:hover .text-over-card {
+    opacity: 1;
+}
+
+.text-card {
+    color: var(--storia-ice);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+    -webkit-transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+    transform: translate(-10%, -10%);
+    text-align: center;
+}
+
+.text-card-valoriser {
+    color: var(--storia-petrol);
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.linkedin {
+    color: var(--storia-duck);
+}
+
+.linkedin:hover {
+    color: var(--storia-petrol);
+    text-decoration: none;
+}
+
+.list-title {
+    font-family: var(--storia-major-font);
+    color: var(--storia-petrol);
+}
+
+.prestations .last-list-item {
+    padding-bottom: 0;
+}
+
+.prestations ul {
+    list-style-image: url('../images/pictos/storia-asterisk-petrol-list.png');
+}
+
+.prestations li {
+    padding-bottom: 1rem;
+}
+
+.list-asterisk {
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.list-asterisk:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.contact-form {
+    background-color: var(--storia-duck);
+    color: var(--storia-ice);
+    font-family: var(--storia-major-font);
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.contact-logo {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.contact-logo:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background-color: var(--storia-frost);
+    color: var(--storia-petrol);
+}
+
+footer img {
+    width : 50px;
+}
+
+footer a {
+    color: var(--storia-duck);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--storia-ice);
+}
+
+.site-contributors {
+    font-size: 0.8rem;
+}
+
+.site-contributors p {
+    margin-bottom: 0.5rem
+}
+
+.social-network-text {
+    font-size: 0.6rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-page {
+        display: none;
+    }
+
+    .mobile-center-text {
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .carousel-container h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: fit-content;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+    .cards-title-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .text-card {
+        color: var(--storia-ice);
+        font-size: 1rem;
+        line-height: 1.3rem;
+        position: absolute;
+        top: 12%;
+        left: 16%;
+        -webkit-transform: translate(-10%, -10%);
+        -ms-transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
+        text-align: center;
+    }
+
+    .text-card-valoriser {
+        color: var(--storia-petrol);
+    }
+
+    .mobile-cloud-words {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .cloud-words {
+        width: 80%;
+    }
+
+    .portrait {
+        margin-bottom: 1rem;
+    }
+
+    .mobile-expertise-list {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .logo-contact-container {
+        display: none;
+    }
+
+    .mentions-legales {
+        margin-top: 1rem;
+    }
+}
