@@ -56,11 +56,14 @@ span {
     margin-left: 3%;
 }
 
-.navbar a {
+.navbar-link {
+    display: block;
+    padding: 0.5rem;
     color : var(--storia-duck)
 }
 
-.navbar a:hover {
+.navbar-link:hover {
+    text-decoration: none;
     color : var(--storia-petrol);
 }
 
@@ -91,25 +94,41 @@ span {
 }
 
 .navbar-list {
-    padding-right: 3.6rem;
+    padding-right: 12rem;
 }
 
-.logo-header {
-    width: 75%;
-    margin-top: 5rem;
-    height: 100%;
+.top-page {
+    font-family: var(--storia-text-font);
+    font-size: 1rem;
+    color: var(--storia-ice);
+    border-radius: 10px;
+}
+
+.navbar-brand:hover .top-page {
+    background-color: var(--storia-petrol);
+    transition: all 0.5s ease;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255,102,203);
 }
 
 .carousel-container {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .carousel-container h2 {
+    font-size: 4rem;
+    line-height: 5rem;
     width: fit-content;
     color: var(--storia-ice);
     background-color: rgba(29, 72, 81, .9);
     padding: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     border-radius: 15px;
 }
 
@@ -180,19 +199,11 @@ span {
 
 .text-card-valoriser {
     color: var(--storia-petrol);
-    font-size: 1.2rem;
-    position: absolute;
-    top: 12%;
-    left: 16%;
-    -webkit-transform: translate(-10%, -10%);
-    -ms-transform: translate(-10%, -10%);
-    transform: translate(-10%, -10%);
-    text-align: center;
 }
 
 .portrait {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .linkedin {
@@ -284,4 +295,90 @@ footer a:hover {
 
 .social-network-text {
     font-size: 0.6rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-page {
+        display: none;
+    }
+
+    .mobile-center-text {
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .carousel-container h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: fit-content;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+    .cards-title-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .text-card {
+        color: var(--storia-ice);
+        font-size: 1rem;
+        line-height: 1.3rem;
+        position: absolute;
+        top: 12%;
+        left: 16%;
+        -webkit-transform: translate(-10%, -10%);
+        -ms-transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%);
+        text-align: center;
+    }
+
+    .text-card-valoriser {
+        color: var(--storia-petrol);
+    }
+
+    .mobile-cloud-words {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .cloud-words {
+        width: 80%;
+    }
+
+    .portrait {
+        margin-bottom: 1rem;
+    }
+
+    .mobile-expertise-list {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .logo-contact-container {
+        display: none;
+    }
+
+    .mentions-legales {
+        margin-top: 1rem;
+    }
 }
