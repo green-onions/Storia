@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color : aliceblue;
+    background-color : #FFFFFF;
     font-family: var(--storia-text-font);
     font-size: 1.2rem;
 }
@@ -47,6 +47,20 @@ h3 {
 
 span {
     font-weight: 700;
+}
+
+.storia-separation {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin: 4rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.storia-separation:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .navbar {
@@ -139,15 +153,7 @@ span {
 }
 
 .cards-title-logo {
-    width: 30px;
-    height: 30px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.cards-title-logo:hover {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    width: 20rem;
 }
 
 .storia-card {
@@ -164,9 +170,13 @@ span {
     right: 0;
     height: 100%;
     width: 92%;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem;
     opacity: 0;
     transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-proteger {
@@ -187,13 +197,12 @@ span {
 
 .text-card {
     color: var(--storia-ice);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     position: absolute;
-    top: 12%;
-    left: 16%;
-    -webkit-transform: translate(-10%, -10%);
-    -ms-transform: translate(-10%, -10%);
-    transform: translate(-10%, -10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -204,6 +213,12 @@ span {
 .portrait {
     width: 100%;
     height: auto;
+}
+
+.who {
+    background-color: var(--storia-ice);
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 .linkedin {
@@ -220,12 +235,16 @@ span {
     color: var(--storia-petrol);
 }
 
+.img-prestations {
+    width: 90%;
+}
+
 .prestations .last-list-item {
     padding-bottom: 0;
 }
 
 .prestations ul {
-    list-style-image: url('../images/pictos/storia-asterisk-petrol-list.png');
+    list-style-image: url("src/storia-asterisk-petrol-list.png");
 }
 
 .prestations li {
@@ -245,12 +264,26 @@ span {
 }
 
 .contact-form {
-    background-color: var(--storia-duck);
+    background-color: var(--storia-petrol);
     color: var(--storia-ice);
-    font-family: var(--storia-major-font);
+    font-family: var(--storia-text-font);
     font-size: 1.4rem;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1rem 2rem 0 2rem;
+}
+
+.contact-text {
+    color: var(--storia-frost);
+}
+
+.mail a {
+    color: var(--storia-frost)!important;
+    text-decoration: underline!important;
+}
+
+.mail a:hover {
+    color: var(--storia-ice)!important;
+    text-decoration: underline!important;
 }
 
 .contact-logo {
@@ -268,7 +301,7 @@ span {
 footer {
     margin-top: 3rem;
     padding: 1rem 0;
-    background-color: var(--storia-frost);
+    background-color: var(--storia-ice);
     color: var(--storia-petrol);
 }
 
@@ -295,6 +328,24 @@ footer a:hover {
 
 .social-network-text {
     font-size: 0.6rem;
+}
+
+.social-network-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.button-footer {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    color: var(--storia-duck);
+    font-size: 0.8rem;
+    background-color: var(--storia-ice);
+    border-width: 0px;
+}
+
+.button-footer:hover {
+    color: var(--storia-ice);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -334,22 +385,12 @@ footer a:hover {
         border-radius: 10px;
     }
 
-    .cards-title-logo {
-        width: 22px;
-        height: 22px;
+    .card-div {
+        margin-left: 0;
     }
 
     .text-card {
-        color: var(--storia-ice);
         font-size: 1rem;
-        line-height: 1.3rem;
-        position: absolute;
-        top: 12%;
-        left: 16%;
-        -webkit-transform: translate(-10%, -10%);
-        -ms-transform: translate(-10%, -10%);
-        transform: translate(-10%, -10%);
-        text-align: center;
     }
 
     .text-card-valoriser {
@@ -380,5 +421,12 @@ footer a:hover {
 
     .mentions-legales {
         margin-top: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .text-card {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 }
