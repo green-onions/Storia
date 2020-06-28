@@ -13,28 +13,6 @@ body {
     font-size: 1.2rem;
 }
 
-hr {
-    margin-top: 3rem;
-    width: 80%;
-    overflow: visible;
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-}
-
-hr:before {
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    border-color: black;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
-
 h2 {
     font-family: var(--storia-major-font);
     color: var(--storia-petrol);
@@ -107,10 +85,6 @@ span {
     transform: rotate(180deg);
 }
 
-.navbar-list {
-    padding-right: 12rem;
-}
-
 .top-page {
     font-family: var(--storia-text-font);
     font-size: 1rem;
@@ -129,6 +103,17 @@ span {
 
 .custom-toggler .navbar-toggler {
     border-color: rgb(255,102,203);
+}
+
+.flags {
+    height: 25px;
+    width: 25px;
+}
+
+.flag-position {
+    position: absolute;
+    right: 0.2em;
+    top: 0.25em;
 }
 
 .carousel-container {
@@ -154,6 +139,8 @@ span {
 
 .cards-title-logo {
     width: 20rem;
+    height: 18rem;
+    padding-bottom: 6rem;
 }
 
 .storia-card {
@@ -169,7 +156,7 @@ span {
     left: 0;
     right: 0;
     height: 100%;
-    width: 92%;
+    width: 90%;
     margin: 0 1rem;
     opacity: 0;
     transition: .5s ease;
@@ -213,11 +200,11 @@ span {
 .portrait {
     width: 100%;
     height: auto;
+    border: 4px ridge rgba(132, 203, 205, .6);
 }
 
 .who {
     background-color: var(--storia-ice);
-    border-radius: 5px;
     font-size: 0.9rem;
 }
 
@@ -232,11 +219,13 @@ span {
 
 .list-title {
     font-family: var(--storia-major-font);
+    font-size: 1.8rem;
     color: var(--storia-petrol);
 }
 
 .img-prestations {
-    width: 90%;
+    width: 50%;
+    height: 50%;
 }
 
 .prestations .last-list-item {
@@ -252,10 +241,11 @@ span {
 }
 
 .list-asterisk {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    margin: 0 0.6rem 0.2rem 0;
 }
 
 .list-asterisk:hover {
@@ -348,7 +338,7 @@ footer a:hover {
     color: var(--storia-ice);
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 300px) and (max-width: 420px) {
     body {
         font-size: 1rem;
     }
@@ -393,15 +383,6 @@ footer a:hover {
         color: var(--storia-petrol);
     }
 
-    .mobile-cloud-words {
-        padding: 0;
-        margin-left: 0;
-    }
-
-    .cloud-words {
-        width: 80%;
-    }
-
     .portrait {
         margin-bottom: 1rem;
     }
@@ -409,6 +390,10 @@ footer a:hover {
     .mobile-expertise-list {
         padding: 0;
         margin-left: 0;
+    }
+
+    .img-prestations {
+        padding-top: 2rem;
     }
 
     .logo-contact-container {
@@ -430,11 +415,31 @@ footer a:hover {
     .text-card {
         font-size: 1rem;
     }
+
+    .carousel-container h2 {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .logo-contact-container {
+        display: none;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 565px) {
     .text-card {
         font-size: 1.2rem;
+    }
+
+    .carousel-container h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .logo-contact-container {
+        display: none;
     }
 }
 
@@ -442,17 +447,40 @@ footer a:hover {
     .text-card {
         font-size: 1.5rem;
     }
+
+    .carousel-container h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .logo-contact-container {
+        display: none;
+    }
 }
 
 @media (min-width: 711px) and (max-width: 900px) {
     .text-card {
         font-size: 1.9rem;
     }
+
+    .carousel-container h2 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .logo-contact-container {
+        display: none;
+    }
 }
 
 @media (min-width: 901px) and (max-width: 992px) {
     .text-card {
         font-size: 2.2rem;
+    }
+
+    .logo-contact-container {
+        display: none;
     }
 }
 
